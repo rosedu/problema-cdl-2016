@@ -1,6 +1,4 @@
-# problema-cdl-2016
-
-## Eminescu și geometria
+# Eminescu și geometria
 
 Mihai Eminescu, _poetul nepereche_, a decis că pentru a-și lărgi perspectivele, vrea să studieze la Facultatea de Informatică și Calculatoare. În anul 1, s-a îndrăgostit de geometrie, pe care a crezut-o ca fiind asemănătoare cu poezia. Până în anul 3 el a fost nemulțumit de expresivitatea limbajelor de programare din ziua de astăzi. Chiar și Haskell i se părea lui că e prea uman. Așa că s-a gândit că ar fi extraordinar dacă ar putea scrie poezii într-un limbaj de programare, care mai apoi să facă un desen geometric. Luceafărul ar putea deveni multidimensional în acest fel.
 
@@ -18,7 +16,9 @@ Comenzile sunt *ascunse* în interiorul poeziei, fiind necesar ca poezia să nu-
 Un vers este asociat unei comenzi dacă conține un cuvânt cheie, în funcție de comandă.
 
 ## Crearea de obiecte 2D
+
 Există două moduri prin care se pot crea noi obiecte:
+
 - Obiecte prestabilite, unde se dă un tip de obiect (pătrat sau dreptunghi) și poziția acestuia
 - Obiecte poligon, unde se da o lista de puncte
 
@@ -107,7 +107,7 @@ Dorm şi florile-n grădină -
 Dormi în pace!
 ```
 
-După ce parsați întreaga poezie, va trebui la final să afișați pentru toate figurile din ea, toate punctele în care se află.
+După ce parsați întreaga poezie, va trebui la final să afișați pentru toate figurile din ea, toate punctele în care se află. Punctele vor fi sortate după X și apoi după Y.
 
 ```
 0 Patrat:
@@ -126,8 +126,6 @@ După ce parsați întreaga poezie, va trebui la final să afișați pentru toat
 4 4
 
 ```
-
-![](https://lh3.googleusercontent.com/IYCrz1Qv6swJubWzBPzHPGNlg9Y6D8KxN7rNzHLnZamq_jkSvmmClfiMJrmvLEdz__5a3dEG4_W1-NVy2CnbUSTxnRAteL8fNi56yDWycPRAtBybnp46SQNJzaWf6GpAGYkO1kbmTRO_HVVzJ0F3myYqOm6zUAb52t6Tuk-VCQ5HKesxfAnISyZJWPRrrC9lmXcdzYwivsgovrpUErZSirwou2lJkD6xHzhd1nrF_3_9cPl7Fkut0qID0w5E57O8OrHt2VFmXZIV1V9TBWlbYMxJUO3Cc3X9Xe2LvXFgFpfu5i7LPkmSFfWrFqh_jIB0hMMj1sREtDIBv-K05Dr4k97wBm-EQbsHFVcMgxRv3lu0dKSEQIfpIKxwy8w1vwv_qMKyIm2HwHOwiTJYKA01Y6oQk5KwLcBhtxB5zQy3QwPbWQEUqbkbPm5LI-y85mvgFabzNcAevFjjI7K1lZYvXvTGplJn8vWiS6SWmDegMz54Z6jCRczDMFnjhuoTUkfGbJ6iWoTWoQQcMd7oNTo9MnQ98LDrWp_Boe3lXbCfERRcBuTjaB7XH8CHzHCnrjW8jU2jeA=w609-h812-no)
 
 ### Limite
 
@@ -149,7 +147,7 @@ După ce parsați întreaga poezie, va trebui la final să afișați pentru toat
 
 ### Cum veți trimite soluția
 
-- veți codul sursă pe un URL accesibil, dar private (un server, sau [Github Gist](https://gist.github.com))
+- veți pune codul sursă pe un URL accesibil, dar private (un server, sau [gist](https://gist.github.com) pe Github), și veți pune acest URL în formularul de înscriere
 - proiectul îl puteți face în orice limbaj doriți voi
 - dar, va trebui să conțină un `Makefile` care va genera un fișier executabil (un ghid scurt pentru utilitarul Make e [aici](http://mrbook.org/blog/tutorials/make/))
 - binarul va trebui să primească 2 parametrii, primul este fișierul de intrare, iar al doilea este fișierul de ieșire
