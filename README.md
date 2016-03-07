@@ -132,7 +132,7 @@ După ce parsați întreaga poezie, va trebui la final să afișați pentru toat
 * fișierul de intrare va avea maxim 10.000 de linii
 * vor fi maxim 1.000 de figuri geometrice create
 * fiecare figură geometrică va avea maxim 42 de puncte
-* timpul de rulare va fi de 1 secundă per test, pe o mașină de 512 MB
+* timpul de rulare va fi de 1 secundă per test, pe o mașină Linux Ubuntu de 512 MB RAM
 
 ### Specificațiile limbajului
 
@@ -149,7 +149,7 @@ După ce parsați întreaga poezie, va trebui la final să afișați pentru toat
 
 - veți pune codul sursă pe un URL accesibil, dar private (un server, sau [gist](https://gist.github.com) pe Github), și veți pune acest URL în formularul de înscriere
 - proiectul îl puteți face în orice limbaj doriți voi
-- dar, va trebui să conțină un `Makefile` care va genera un fișier executabil (un ghid scurt pentru utilitarul Make e [aici](http://mrbook.org/blog/tutorials/make/))
+- dar, va trebui să conțină un `Makefile` care va genera un fișier executabil (un ghid scurt pentru utilitarul Make e [aici](http://mrbook.org/blog/tutorials/make/)), pe o mașină Linux Ubuntu
 - binarul va trebui să primească 2 parametrii, primul este fișierul de intrare, iar al doilea este fișierul de ieșire
 
 #### Testarea
