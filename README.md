@@ -133,6 +133,7 @@ După ce parsați întreaga poezie, va trebui la final să afișați pentru toat
 * vor fi maxim 1.000 de figuri geometrice create
 * fiecare figură geometrică va avea maxim 42 de puncte
 * timpul de rulare va fi de 1 secundă per test, pe o mașină Linux Ubuntu de 512 MB RAM
+* se garantează că toate punctele poligoanelor vor fi în intervalul [INT_MIN, INT_MAX] (valorile de [aici](http://www.cplusplus.com/reference/climits/)), indiferent de ce mișcări vor fi făcute pe planul geometric
 
 ### Specificațiile limbajului
 
