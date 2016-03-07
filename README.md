@@ -87,23 +87,23 @@ Este valid să se trimită același ID (și e evident că cele două obiecte se 
 ```
 Somnoroase păsărele digitale... 
 
-Somnoroase păsărele
-Vreau un pătrat în punctul (0,0) de latură 2.
-Pe la cuiburi se adună,
-Vreau un dreptunghi în punctul (1,1) de laturi (3,2).
-Se ascund în rămurele -
-Mută în stânga figura 0 cu 2.
-Noapte bună!
-Rotește figura 1 cu 90 de grade la punctul (1,1).
+Somnoroase pasarele
+Vreau un patrat in punctul (0,0) de latura 2.
+Pe la cuiburi se aduna,
+Vreau un dreptunghi in punctul (1,1) de laturi (3,2).
+Se ascund în ramurele -
+Muta in stanga figura 0 cu 2.
+Noapte buna!
+Roteste figura 1 cu 90 de grade la punctul (1,1).
 
-Doar izvoarele suspină,
-Dacă figura 0 intersectează figura 1,
+Doar izvoarele suspina,
+Dacă figura 0 intersecteaza figura 1,
 Vreau un poligon cu punctele (1,1), (3,3), (4,4).
 Altfel,
-Vreau un pătrat în punctul (1,1) de latură 2.
-Pe când codrul negru tace;
+Vreau un patrat in punctul (1,1) de latura 2.
+Pe cand codrul negru tace;
 Gata blocul de daca.
-Dorm şi florile-n grădină -
+Dorm si florile-n gradina -
 Dormi în pace!
 ```
 
