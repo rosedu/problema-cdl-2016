@@ -14,12 +14,12 @@ Limbajul suporta mai multe comenzi:
 - bloc de decizie (if), unde singura condiție este intersecția a două obiecte
 - ștergerea de obiecte
 
-Comenzile sunt *ascunse* în interiorul poeziei, fiind necesar ca poezia să nu-și piarda valoarea (*valuarea*) artistică.
+Comenzile sunt *ascunse* în interiorul poeziei, fiind necesar ca poezia să nu-și piarda valoarea artistică.
 Un vers este asociat unei comenzi dacă conține un cuvânt cheie, în funcție de comandă.
 
 ## Crearea de obiecte 2D
 Există două moduri prin care se pot crea noi obiecte:
-- Obiecte prestabilite, unde se dă un tip de obiect (pătrat, triunghi, dreptunghi) și poziția acestuia
+- Obiecte prestabilite, unde se dă un tip de obiect (pătrat sau dreptunghi) și poziția acestuia
 - Obiecte poligon, unde se da o lista de puncte
 
 Important este că fiecărui obiect creat i se asociază un ID unic; primul obiect creat va avea ID-ul egal cu 0, următorul cu 1, etc.
@@ -35,7 +35,7 @@ deci celelalte puncte vor avea coordonatele (0, 2), (2, 2) şi (2, 0).
 
 ## Translația obiectelor
 Translația se referă la mutarea obiectelor pe verticală sau pe orizontală.
-Cuvântul cheie este `mută`, împreună cu `stânga` și `dreapta`.
+Cuvântul cheie este `muta`, împreună cu `stanga` și `dreapta`.
 
 Versul de mai jos mută obiectul cu ID-ul 0 la stânga cu două unitați. Dacă considerăm pătratul de mai sus, coordonatele vârfurilor vor fi (-2, 0), (-2, 2), (0, 2) şi (0, 0).
 
@@ -45,7 +45,7 @@ Mută în stânga figura 0 cu 2.
 
 ## Rotirea obiectelor
 Rotirea e operația prin care un obiect se rotește în jurul unui punct dat.
-Cuvântul cheie este `rotește`.
+Cuvântul cheie este `roteste`.
 
 Versul de mai jos rotește obiectul cu ID-ul 0 (din nou, considerăm pătratul din exemplele de mai sus) cu 90 de grade în sens trigonometric în jurul punctului (0, 0). 
 Coordonatele pătratului după rotire vor fi  (0, -2),  (2, -2),  (-2, 0) și (0, 0). (rotirea se face după operația de translație de mai sus)
@@ -58,7 +58,9 @@ Rotește figura 0 cu 90 de grade la punctul (0,0).
 
 Structura de decizie (if) verifică dacă două obiecte 2D se intersectează sau nu; în funcție de rezultat de decide care comandă se execută în continuare. 
 
-Cuvintele cheie sunt `dacă`, `intersectează` și `altfel`.
+Cuvintele cheie sunt `daca`, `intersecteaza`, `altfel` și `gata`.
+Linia care contine comanda `gata` nu are un format fix; linia va incepe mereu cu `gata`, dar dupa se poate continua un vers normal (vezi exemplele de mai jos).
+
 În exemplul de mai jos, dacă figura 0 intersectează figura 1, se va crea un poligon, altfel se va crea un pătrat.
 
 ```
@@ -66,8 +68,10 @@ Dacă figura 0 intersectează figura 1,
 Vreau un poligon cu punctele (1,1), (3,3), (4,4).
 Altfel,
 Vreau un pătrat în punctul (1,1) de latură 2.
+Gata---
 ```
 
+Intre liniile cu `daca` si `altfel` (si intre `altfel` si `gata`) pot fi mai multe comenzi (sau niciuna).
 Este valid să se trimită același ID (și e evident că cele două obiecte se vor intersecta).
 
 ## Ștergerea de obiecte
@@ -77,9 +81,6 @@ Este valid să se trimită același ID (și e evident că cele două obiecte se 
 ```
 Șterge figura 0.
 ```
-
-Nu se garantează că ID-ul dat ca parametru comenzii de ștergere este asociat unui obiect existent; pentru celelalte comenzi se garanteaza.
-
 
 ## Exemplu de poezie
 
@@ -101,6 +102,7 @@ Vreau un poligon cu punctele (1,1), (3,3), (4,4).
 Altfel,
 Vreau un pătrat în punctul (1,1) de latură 2.
 Pe când codrul negru tace;
+Gata blocul de daca.
 Dorm şi florile-n grădină -
 Dormi în pace!
 ```
@@ -109,20 +111,20 @@ După ce parsați întreaga poezie, va trebui la final să afișați pentru toat
 
 ```
 0 Patrat:
--2 0
--2 2
 0 0
+0 2
 2 0
+2 2
 1 Dreptunghi:
-1 -3
-1 1
-3 -3
-3 1
-2 Patrat:
 1 1
 1 3
-3 1
+4 1
+4 3
+2 Poligon:
+1 1
 3 3
+4 4
+
 ```
 
 ![](https://lh3.googleusercontent.com/IYCrz1Qv6swJubWzBPzHPGNlg9Y6D8KxN7rNzHLnZamq_jkSvmmClfiMJrmvLEdz__5a3dEG4_W1-NVy2CnbUSTxnRAteL8fNi56yDWycPRAtBybnp46SQNJzaWf6GpAGYkO1kbmTRO_HVVzJ0F3myYqOm6zUAb52t6Tuk-VCQ5HKesxfAnISyZJWPRrrC9lmXcdzYwivsgovrpUErZSirwou2lJkD6xHzhd1nrF_3_9cPl7Fkut0qID0w5E57O8OrHt2VFmXZIV1V9TBWlbYMxJUO3Cc3X9Xe2LvXFgFpfu5i7LPkmSFfWrFqh_jIB0hMMj1sREtDIBv-K05Dr4k97wBm-EQbsHFVcMgxRv3lu0dKSEQIfpIKxwy8w1vwv_qMKyIm2HwHOwiTJYKA01Y6oQk5KwLcBhtxB5zQy3QwPbWQEUqbkbPm5LI-y85mvgFabzNcAevFjjI7K1lZYvXvTGplJn8vWiS6SWmDegMz54Z6jCRczDMFnjhuoTUkfGbJ6iWoTWoQQcMd7oNTo9MnQ98LDrWp_Boe3lXbCfERRcBuTjaB7XH8CHzHCnrjW8jU2jeA=w609-h812-no)
@@ -137,12 +139,13 @@ După ce parsați întreaga poezie, va trebui la final să afișați pentru toat
 ### Specificațiile limbajului
 
 - punctele pătratelor și dreptunghiurilor din poezie reprezintă punctul cel mai din stânga jos
-- rotațiile sunt în sensul acelor de ceasornic
-- orice linie care nu conține cuvintele `muta`, `vreau`, `altfel`, `daca`, `roteste`, nu afecteaza planul geometric
+- rotațiile se fac în sens trigonometric
+- orice linie care nu conține cuvintele `muta`, `roteste`, `vreau`, `altfel`, `daca`, `gata` nu afecteaza planul geometric
 - liniile de comandă (cele cu cuvintele cheie de mai sus) își vor păstra aceaiași formă, doar numerele vor fi schimbate
 - punctele din plan vor încăpea într-un _int_
 - rotațiile vor fi doar multiplu de 90
 - toate poligoanele sunt convexe
+- în fișierul de intrare nu vor fi diacritice
 
 ### Cum veți trimite soluția
 
