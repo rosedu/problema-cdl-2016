@@ -111,20 +111,19 @@ După ce parsați întreaga poezie, va trebui la final să afișați pentru toat
 
 ```
 0 Patrat:
+-2 0
+-2 2
 0 0
 0 2
-2 0
-2 2
 1 Dreptunghi:
+-1 4
+-1 1
 1 1
-1 3
-4 1
-4 3
+1 4
 2 Poligon:
 1 1
 3 3
 4 4
-
 ```
 
 ### Limite
