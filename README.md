@@ -35,7 +35,7 @@ deci celelalte puncte vor avea coordonatele (0, 2), (2, 2) şi (2, 0).
 
 ## Translația obiectelor
 Translația se referă la mutarea obiectelor pe verticală sau pe orizontală.
-Cuvântul cheie este `muta`, împreună cu `stanga` și `dreapta`.
+Cuvântul cheie este `muta`, împreună cu `stanga`, `dreapta`, `sus` și `jos`.
 
 Versul de mai jos mută obiectul cu ID-ul 0 la stânga cu două unitați. Dacă considerăm pătratul de mai sus, coordonatele vârfurilor vor fi (-2, 0), (-2, 2), (0, 2) şi (0, 0).
 
