@@ -48,7 +48,7 @@ Rotirea e operația prin care un obiect se rotește în jurul unui punct dat.
 Cuvântul cheie este `roteste`.
 
 Versul de mai jos rotește obiectul cu ID-ul 0 (din nou, considerăm pătratul din exemplele de mai sus) cu 90 de grade în sens trigonometric în jurul punctului (0, 0). 
-Coordonatele pătratului după rotire vor fi  (0, -2),  (2, -2),  (-2, 0) și (0, 0). (rotirea se face după operația de translație de mai sus)
+Coordonatele pătratului după rotire vor fi  (0, -2),  (-2, -2),  (-2, 0) și (0, 0). (rotirea se face după operația de translație de mai sus)
 
 ```
 Rotește figura 0 cu 90 de grade la punctul (0,0).
