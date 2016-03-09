@@ -30,7 +30,7 @@ Versul de mai jos crează un pătrat de latură 2. Punctul (0, 0) din comandă c
 deci celelalte puncte vor avea coordonatele (0, 2), (2, 2) şi (2, 0).
 
 ```
-  Vreau un pătrat în punctul (0,0) de latură 2.
+  Vreau un patrat în punctul (0,0) de latura 2.
 ```
 
 ## Translația obiectelor
@@ -40,7 +40,7 @@ Cuvântul cheie este `muta`, împreună cu `stanga`, `dreapta`, `sus` și `jos`.
 Versul de mai jos mută obiectul cu ID-ul 0 la stânga cu două unitați. Dacă considerăm pătratul de mai sus, coordonatele vârfurilor vor fi (-2, 0), (-2, 2), (0, 2) şi (0, 0).
 
 ```
-Mută în stânga figura 0 cu 2.
+Muta în stanga figura 0 cu 2.
 ```
 
 ## Rotirea obiectelor
@@ -51,7 +51,7 @@ Versul de mai jos rotește obiectul cu ID-ul 0 (din nou, considerăm pătratul d
 Coordonatele pătratului după rotire vor fi  (0, -2),  (-2, -2),  (-2, 0) și (0, 0). (rotirea se face după operația de translație de mai sus)
 
 ```
-Rotește figura 0 cu 90 de grade la punctul (0,0).
+Roteste figura 0 cu 90 de grade la punctul (0,0).
 ```
 
 ## Structura de decizie
@@ -64,10 +64,10 @@ Linia care contine comanda `gata` nu are un format fix; linia va incepe mereu cu
 În exemplul de mai jos, dacă figura 0 intersectează figura 1, se va crea un poligon, altfel se va crea un pătrat.
 
 ```
-Dacă figura 0 intersectează figura 1,
+Daca figura 0 intersecteaza figura 1,
 Vreau un poligon cu punctele (1,1), (3,3), (4,4).
 Altfel,
-Vreau un pătrat în punctul (1,1) de latură 2.
+Vreau un patrat in punctul (1,1) de latura 2.
 Gata---
 ```
 
@@ -79,19 +79,19 @@ Este valid să se trimită același ID (și e evident că cele două obiecte se 
 Ștergerea "distruge" obiectul cu ID-ul respectiv.
 
 ```
-Șterge figura 0.
+Sterge figura 0.
 ```
 
 ## Exemplu de poezie
 
 ```
-Somnoroase păsărele digitale... 
+Somnoroase pasarele digitale... 
 
 Somnoroase pasarele
 Vreau un patrat in punctul (0,0) de latura 2.
 Pe la cuiburi se aduna,
 Vreau un dreptunghi in punctul (1,1) de laturi (3,2).
-Se ascund în ramurele -
+Se ascund in ramurele -
 Muta in stanga figura 0 cu 2.
 Noapte buna!
 Roteste figura 1 cu 90 de grade la punctul (1,1).
