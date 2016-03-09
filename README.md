@@ -97,14 +97,14 @@ Noapte buna!
 Roteste figura 1 cu 90 de grade la punctul (1,1).
 
 Doar izvoarele suspina,
-Dacă figura 0 intersecteaza figura 1,
+Daca figura 0 intersecteaza figura 1,
 Vreau un poligon cu punctele (1,1), (3,3), (4,4).
 Altfel,
 Vreau un patrat in punctul (1,1) de latura 2.
 Pe cand codrul negru tace;
 Gata blocul de daca.
 Dorm si florile-n gradina -
-Dormi în pace!
+Dormi in pace!
 ```
 
 După ce parsați întreaga poezie, va trebui la final să afișați pentru toate figurile din ea, toate punctele în care se află. Punctele vor fi sortate după X și apoi după Y.
