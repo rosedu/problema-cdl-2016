@@ -116,8 +116,8 @@ După ce parsați întreaga poezie, va trebui la final să afișați pentru toat
 0 0
 0 2
 1 Dreptunghi:
--1 4
 -1 1
+-1 4
 1 1
 1 4
 2 Poligon:
