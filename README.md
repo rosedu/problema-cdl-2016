@@ -142,7 +142,7 @@ După ce parsați întreaga poezie, va trebui la final să afișați pentru toat
 - liniile de comandă (cele cu cuvintele cheie de mai sus) își vor păstra aceaiași formă, doar numerele vor fi schimbate
 - punctele din plan vor încăpea într-un _int_
 - rotațiile vor fi doar multiplu de 90
-- toate poligoanele sunt convexe
+- toate poligoanele sunt convexe. De asemenea, toate punctele pot cădea pe aceiași dreaptă, și să fie considerat un poligon valid. În schimb, un singur punct nu va fi considerat un poligon.
 - în fișierul de intrare nu vor fi diacritice
 
 ### Cum veți trimite soluția
