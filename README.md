@@ -20,7 +20,7 @@ Un vers este asociat unei comenzi dacă conține un cuvânt cheie, în funcție 
 Există două moduri prin care se pot crea noi obiecte:
 
 - Obiecte prestabilite, unde se dă un tip de obiect (pătrat sau dreptunghi) și poziția acestuia
-- Obiecte poligon, unde se da o lista de puncte
+- Obiecte poligon, unde se da o lista de puncte. Citește mai multe [aici](Poligon.md) despre ele.
 
 Important este că fiecărui obiect creat i se asociază un ID unic; primul obiect creat va avea ID-ul egal cu 0, următorul cu 1, etc.
 Un aspect care intervine este ștergerea de obiecte. Să presupunem următorul scenariu: s-au creat 4 obiecte (cu ID-urile 0, 1, 2 si 3), după care apare o comanda de ștergere a obiectului cu ID-ul 1; după ștergere obiectele rămase vor fi 0, 2 și 3. Dacă în acest moment se dorește crearea unui nou obiect, acesta va avea ID-ul 4. Cu alte cuvinte se va incrementa ID-ul ultimului obiect creat, fără să se țină cont de ștergeri. 
